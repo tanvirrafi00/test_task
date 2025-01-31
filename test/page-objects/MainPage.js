@@ -1,4 +1,4 @@
-import { Label } from "../../framework/elements/Label.js";
+import { Label } from "../../framework/elements/index.js";
 import BasePage from "../../framework/page/BasePage.js";
 import { PreciseTextLocator } from "../../framework/utils/locatorHelper.js";
 
@@ -11,6 +11,10 @@ class MainPage extends BasePage {
   }
   async clickHoverLink() {
     await this.hoverLink.click();
+  }
+
+  async clickKeyPressesLink() {
+    await this.keyPressesLink.click();
   }
 }
 
