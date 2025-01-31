@@ -5,8 +5,6 @@ import MainPage from "../page-objects/MainPage.js";
 
 Given(/^I am on the main page$/, async () => {
   await Browser.openUrl(mainConfig.baseUrl);
-  console.log("hello.................................");
-  await Browser.waitForDelay(3000);
 });
 
 When(/^I click on Hovers$/, async () => {
@@ -14,4 +12,7 @@ When(/^I click on Hovers$/, async () => {
 });
 When(/^I click on the Key Presses link$/, async () => {
   await MainPage.clickKeyPressesLink();
+});
+When(/^I click on the Java script alert link$/, async () => {
+  await MainPage.clickJsAlertLink();
 });
