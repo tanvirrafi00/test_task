@@ -3,7 +3,7 @@ import { assert } from "chai";
 import JavaScriptAlertsPage from "../page-objects/JavaScriptAlertsPage.js";
 import Browser from "../../framework/browser/Browser.js";
 
-Then(/^I should java script alerts page$/, async () => {
+Then(/^I should be on java script alerts page$/, async () => {
   assert.isTrue(await JavaScriptAlertsPage.isPageOpened(), "Java script alerts page is not opened");
 });
 

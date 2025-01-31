@@ -5,7 +5,7 @@ Feature: Java script alert funtionality
 
   Scenario: Check different types of alert
     When I click on the Java script alert link
-    Then I should java script alerts page
+    Then I should be on java script alerts page
     When I click on JS Alert Button
     Then Alert with "I am a JS Alert" text is shown
     When I close the alert
