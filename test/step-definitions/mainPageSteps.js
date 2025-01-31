@@ -1,7 +1,7 @@
 import { Given, When } from "@wdio/cucumber-framework";
 import Browser from "../../framework/browser/Browser.js";
 import { mainConfig } from "../../framework/configs/main.wdio.conf.js";
-import mainPage from "../page-objects/mainPage.js";
+import MainPage from "../page-objects/MainPage.js";
 
 Given(/^I am on the main page$/, async () => {
   await Browser.openUrl(mainConfig.baseUrl);
@@ -10,5 +10,8 @@ Given(/^I am on the main page$/, async () => {
 });
 
 When(/^I click on Hovers$/, async () => {
-  await mainPage.clickHoverLink();
+  await MainPage.clickHoverLink();
+});
+When(/^I click on the Key Presses link$/, async () => {
+  await MainPage.clickKeyPressesLink();
 });
