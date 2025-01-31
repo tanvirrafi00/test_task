@@ -16,6 +16,10 @@ class MainPage extends BasePage {
   async clickKeyPressesLink() {
     await this.keyPressesLink.click();
   }
+
+  async clickJsAlertLink() {
+    await this.JavaScriptLink.click();
+  }
 }
 
 export default new MainPage();
