@@ -19,15 +19,15 @@ export const config = {
         },
       },
 
-      {
-        browserName: "firefox",
-        maxInstances: 1,
-        "moz:firefoxOptions": {
-          prefs: {
-            "download.default_directory": downloadDir,
-          },
-        },
-      },
+      // {
+      //   browserName: "firefox",
+      //   maxInstances: 1,
+      //   "moz:firefoxOptions": {
+      //     prefs: {
+      //       "download.default_directory": downloadDir,
+      //     },
+      //   },
+      // },
     ],
   },
 };
