@@ -3,7 +3,8 @@
   "type": "module",
   "scripts": {
     "chrome.cucumber": "wdio run ./configs/chrome.cucumber.conf.js",
-    "testKeyPress": "wdio run ./configs/chrome.cucumber.conf.js --spec ./test/features/keyPresses.feature"
+    "testKeyPress": "wdio run ./configs/chrome.cucumber.conf.js --spec ./test/features/keyPresses.feature",
+    "testJsAlerts": "wdio run ./configs/chrome.cucumber.conf.js --spec ./test/features/JavaScriptAlerts.feature"
   },
   "dependencies": {
     "@babel/core": "^7.24.3",
