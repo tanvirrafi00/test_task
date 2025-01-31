@@ -2,7 +2,8 @@
   "name": "a1qa-wdio-framework",
   "type": "module",
   "scripts": {
-    "chrome.cucumber": "wdio run ./configs/chrome.cucumber.conf.js"
+    "chrome.cucumber": "wdio run ./configs/chrome.cucumber.conf.js",
+    "testKeyPress": "wdio run ./configs/chrome.cucumber.conf.js --spec ./test/features/keyPresses.feature"
   },
   "dependencies": {
     "@babel/core": "^7.24.3",
